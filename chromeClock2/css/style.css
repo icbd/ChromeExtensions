@@ -1,0 +1,114 @@
+body {
+  padding: 20px;
+  background-image: linear-gradient(whitesmoke, lightgray); }
+
+#clockDiv {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  margin: 20px auto;
+  border-radius: 50%;
+  background-image: linear-gradient(#f7f7f7, #e0e0e0);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.2); }
+  #clockDiv .clock-base {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #eee; }
+    #clockDiv .clock-base .clock-center {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      top: 50px;
+      left: 50px;
+      border-radius: 50%;
+      background-image: linear-gradient(#e3e3e3, #f7f7f7); }
+      #clockDiv .clock-base .clock-center div {
+        position: absolute;
+        z-index: 999;
+        width: 20px;
+        height: 20px;
+        margin-top: 65px;
+        margin-left: 65px;
+        border-radius: 50%;
+        background-color: orangered; }
+    #clockDiv .clock-base .click-indicator {
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      height: 100%; }
+      #clockDiv .clock-base .click-indicator div {
+        position: absolute;
+        width: 4px;
+        height: 10px;
+        top: 6px;
+        margin-left: 123px;
+        margin-top: 114px;
+        background-color: lightgrey; }
+      #clockDiv .clock-base .click-indicator div:nth-child(1) {
+        transform: rotate(30deg) translateY(-114px); }
+      #clockDiv .clock-base .click-indicator div:nth-child(2) {
+        transform: rotate(60deg) translateY(-114px); }
+      #clockDiv .clock-base .click-indicator div:nth-child(3) {
+        transform: rotate(90deg) translateY(-114px);
+        background-color: lightcoral; }
+      #clockDiv .clock-base .click-indicator div:nth-child(4) {
+        transform: rotate(120deg) translateY(-114px); }
+      #clockDiv .clock-base .click-indicator div:nth-child(5) {
+        transform: rotate(150deg) translateY(-114px); }
+      #clockDiv .clock-base .click-indicator div:nth-child(6) {
+        transform: rotate(180deg) translateY(-114px);
+        background-color: lightcoral; }
+      #clockDiv .clock-base .click-indicator div:nth-child(7) {
+        transform: rotate(210deg) translateY(-114px); }
+      #clockDiv .clock-base .click-indicator div:nth-child(8) {
+        transform: rotate(240deg) translateY(-114px); }
+      #clockDiv .clock-base .click-indicator div:nth-child(9) {
+        transform: rotate(270deg) translateY(-114px);
+        background-color: lightcoral; }
+      #clockDiv .clock-base .click-indicator div:nth-child(10) {
+        transform: rotate(300deg) translateY(-114px); }
+      #clockDiv .clock-base .click-indicator div:nth-child(11) {
+        transform: rotate(330deg) translateY(-114px); }
+      #clockDiv .clock-base .click-indicator div:nth-child(12) {
+        transform: rotate(360deg) translateY(-114px);
+        background-color: lightcoral; }
+    #clockDiv .clock-base .clock-hour {
+      position: absolute;
+      z-index: 2;
+      width: 4px;
+      height: 65px;
+      top: 75px;
+      left: 123px;
+      background-color: #555;
+      border-radius: 2px;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+      transform-origin: 2px 50px;
+      animation: rotate-hour 43200s linear infinite; }
+    #clockDiv .clock-base .clock-minute {
+      position: absolute;
+      z-index: 3;
+      width: 4px;
+      height: 85px;
+      top: 55px;
+      left: 123px;
+      background-color: #555;
+      border-radius: 2px;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+      transform-origin: 2px 70px;
+      animation: rotate-minute 3600s linear infinite; }
+    #clockDiv .clock-base .clock-second {
+      position: absolute;
+      z-index: 4;
+      width: 2px;
+      height: 130px;
+      top: 15px;
+      left: 124px;
+      background-color: orangered;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+      transform-origin: 1px 110px;
+      animation: rotate-second 60s linear infinite; }
+
+/*# sourceMappingURL=style.css.map */
