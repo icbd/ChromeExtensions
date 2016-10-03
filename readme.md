@@ -1,1 +1,1 @@
-Chrome Extensions 练手,每个分支是一个独立的Demo.
+# XMLHttpRequest 跨域请求
