@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>weather</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 520px;
+            height: 270px;
+        }
+
+        table {
+            font-size: 12px;
+            width: 480px;
+            text-align: left;
+            border-collapse: collapse;
+            border: 1px solid #69c;
+            margin: 20px;
+            cursor: default;
+
+        }
+
+        table th {
+            font-weight: normal;
+            font-size: 14px;
+            color: #039;
+            border-bottom: 1px dashed #69c;
+            padding: 12px 17px;
+            white-space: nowrap;
+        }
+
+        table td {
+            color: #669;
+            padding: 7px 17px;
+            white-space: nowrap;
+        }
+
+        table tbody tr:hover td {
+            color: #339;
+            background: #d0dafd;
+        }
+
+        h3 {
+            margin: 10px 0 8px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="weatherDiv">
+    <h3 id="weatherCity"></h3>
+    <table id="weatherTable">
+    </table>
+</div>
+
+<script src="js/cityCode.js"></script>
+<script src="js/api.js"></script>
+</body>
+</html>
